@@ -22,5 +22,5 @@ server.use((req, res) => {
     res.send('pagina não encontrada')
 })
 
-//Porta do servidor
+//Porta do servidor determinada pela variavel de ambiente
 server.listen(process.env.PORT);
