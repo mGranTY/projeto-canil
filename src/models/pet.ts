@@ -140,7 +140,11 @@ export const Pet = {
         return data
     },
     getFromType: (type: PetType): Pet[] => {
-        return data.filter(item => {item.type === type})
+        return data.filter(item => {
+            if(item.type === type){
+                return true
+            }
+        })
     },
     getFromName: (name: string): Pet[] => {
         return data.filter(item =>

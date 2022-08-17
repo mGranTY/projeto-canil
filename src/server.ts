@@ -19,7 +19,8 @@ server.use(mainRoutes);
 
 //Status 404
 server.use((req, res) => {
-    res.send('pagina não encontrada')
+
+    res.render('pages/404')
 })
 
 //Porta do servidor determinada pela variavel de ambiente
